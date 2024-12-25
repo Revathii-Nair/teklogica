@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TEKLOGICA 2025</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,121 +15,6 @@
       href="https://fonts.googleapis.com/css2?family=Garamond:wght@400;700&family=Playfair+Display:wght@700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-        font-family: 'Garamond', serif;
-
-        background: linear-gradient(45deg, rgba(25, 25, 112, 1), rgba(48, 25, 52, 1));
-        color: #333;
-      }
-      #sparkleCanvas {
-        position: fixed; /* Stays in the same position during scrolling */
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1; /* Places it below everything */
-        pointer-events: none; /* Prevents it from capturing any mouse events */
-      }
-
-      .li-a {
-        color: rgba(230, 230, 250, 1);
-        text-decoration: none;
-        padding: 5px 10px;
-        transition: color 0.3s;
-        text-shadow: 0 0 3px rgba(0, 191, 255, 0.5), 0 0 7px rgba(255, 20, 147, 0.5),
-          0 0 12px rgba(57, 255, 20, 0.5);
-      }
-
-      .text-a {
-        color: rgba(230, 230, 250, 1);
-        text-decoration: none;
-        padding: 5px 10px;
-        transition: color 0.3s;
-        text-shadow: 0 0 3px rgba(0, 191, 255, 0.5), 0 0 7px rgba(255, 20, 147, 0.5),
-          0 0 12px rgba(57, 255, 20, 0.5);
-      }
-
-      .container {
-        background-color: rgba(25, 25, 112, 0.5);
-        border: 1px solid #461463;
-        border-radius: 8px;
-        padding: 20px;
-        box-shadow: 0 4px 8px rgba(48, 25, 52, 0.1); /*box-shadow: 0 4px 8px rgba(37, 35, 35, 0.1);*/
-      }
-      .rounded-img {
-        border-radius: 8px;
-      }
-      .btn-primary {
-        background: linear-gradient(45deg, rgba(25, 25, 112, 1), rgba(75, 0, 130, 0.8));
-        color: rgba(230, 230, 250, 1);
-        border: none;
-        padding: 10px 15px;
-        border-radius: 5px;
-        font-family: 'Garamond', serif;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: transform 0.3s, background 0.3s;
-      }
-      .btn-primary:hover {
-        background: rgba(48, 25, 52, 1);
-        background: linear-gradient(45deg, rgba(25, 25, 112, 1), rgba(75, 0, 130, 0.8));
-      }
-      .btn-secondary {
-        background-color: #c56461; /* Warm coral color */
-        border: none;
-      }
-      .btn-secondary:hover {
-        background-color: #572d27; /* Slightly darker on hover */
-      }
-      .theme-name {
-        font-family: 'Playfair Display', serif;
-        font-size: 2rem;
-        font-weight: bold;
-        color: #a77a72; /* Classy color */
-        margin-top: 20px;
-      }
-      .title {
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 1.7rem;
-        font-weight: bold;
-        color: rgba(230, 230, 250, 1);
-        text-shadow: 0 0 3px rgba(0, 191, 255, 0.5), 0 0 7px rgba(255, 20, 147, 0.5),
-          0 0 12px rgba(57, 255, 20, 0.5); /* Vibrant gradient glow */
-      }
-
-      .title-main {
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 2.8rem;
-        font-weight: bold;
-        color: rgba(230, 230, 250, 1);
-        text-shadow: 0 0 3px rgba(0, 191, 255, 0.5), 0 0 7px rgba(255, 20, 147, 0.5),
-          0 0 12px rgba(57, 255, 20, 0.5); /* Vibrant gradient glow */
-      }
-
-      .title-secondary {
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 1.2rem;
-        font-weight: bold;
-        color: rgba(230, 230, 250, 1);
-        text-shadow: 0 0 3px rgba(0, 191, 255, 0.5), 0 0 7px rgba(255, 20, 147, 0.5),
-          0 0 12px rgba(57, 255, 20, 0.5); /* Vibrant gradient glow */
-      }
-
-      .para {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
-          Verdana, sans-serif;
-        font-size: larger;
-        color: rgba(230, 230, 250, 1);
-        text-shadow: 0 0 7px rgba(0, 191, 255, 0.8), 0 0 5px rgba(255, 20, 147, 0.7),
-          0 0 2px rgba(57, 255, 20, 0.6); /* Vibrant gradient glow */
-      }
-
-      .img-hl {
-        text-shadow: 0 0 7px rgba(0, 191, 255, 0.8), 0 0 5px rgba(255, 20, 147, 0.7),
-          0 0 2px rgba(57, 255, 20, 0.6); /* Vibrant gradient glow */
-      }
-    </style>
   </head>
   <body>
     <canvas id="sparkleCanvas"></canvas>
@@ -173,12 +58,22 @@
           </li>
           <li>
             <a
-              href="about.html"
+              href="event.html"
               class="li-a"
               onmouseover="this.style.color='#FF69B4'"
               onmouseout="this.style.color='rgba(230, 230, 250, 1)'"
             >
               Events
+            </a>
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="li-a"
+              onmouseover="this.style.color='#FF69B4'"
+              onmouseout="this.style.color='rgba(230, 230, 250, 1)'"
+            >
+              Contact
             </a>
           </li>
         </div>
@@ -202,10 +97,10 @@
           </div>
           <br />
           <div class="title-secondary">Computer Science Department Presents</div>
-          <div class="title-main my-3">TEKLOGICA 2024-2025 <br /></div>
-           <div
+          <div class="title-main my-2">TEKLOGICA 2024-2025 <br /></div>
+          <div
             class="marquee-container"
-            style="width: 25rem; overflow: hidden; margin: 0 auto; position: relative"
+            style="width: 20rem; overflow: hidden; margin: 0 auto; position: relative"
           >
             <marquee
               class="title-secondary"
@@ -216,11 +111,8 @@
             >
           </div>
           <br />
-          <img
-            src="teck.png"
-            class="img-hl"
-            style="width: 20rem; height: 20rem; opacity: 80%"
-          /><br /><br />
+          <br />
+          <img src="teck.png" style="width: 20rem; height: 20rem; opacity: 80%" /><br /><br />
           <p class="para" id="first">
             <i
               ><b>
@@ -240,77 +132,6 @@
       </div>
     </div>
 
-    <!-- SCRIPT -->
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
-    <script>
-      const canvas = document.getElementById('sparkleCanvas');
-      const ctx = canvas.getContext('2d');
-
-      // Resize the canvas to fit the window
-      function resizeCanvas() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-      }
-
-      resizeCanvas();
-      window.addEventListener('resize', resizeCanvas);
-
-      // Sparkle properties
-      const sparkles = [];
-      const sparkleCount = 100;
-
-      // Function to generate random numbers within a range
-      function random(min, max) {
-        return Math.random() * (max - min) + min;
-      }
-
-      // Create sparkles
-      function createSparkle() {
-        return {
-          x: random(0, canvas.width),
-          y: random(0, canvas.height),
-          size: random(1, 5),
-          opacity: random(0.3, 1),
-          speedX: random(-0.5, 0.5),
-          speedY: random(-0.5, 0.5),
-        };
-      }
-
-      // Initialize sparkles
-      for (let i = 0; i < sparkleCount; i++) {
-        sparkles.push(createSparkle());
-      }
-
-      // Draw sparkles
-      function drawSparkles() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-        sparkles.forEach((sparkle) => {
-          ctx.beginPath();
-          ctx.arc(sparkle.x, sparkle.y, sparkle.size, 0, Math.PI * 2, false);
-          ctx.fillStyle = `rgba(255, 255, 255, ${sparkle.opacity})`;
-          ctx.fill();
-
-          // Update position
-          sparkle.x += sparkle.speedX;
-          sparkle.y += sparkle.speedY;
-
-          // Recycle sparkles when they go out of bounds
-          if (sparkle.x < 0 || sparkle.x > canvas.width || sparkle.y < 0 || sparkle.y > canvas.height) {
-            sparkle.x = random(0, canvas.width);
-            sparkle.y = random(0, canvas.height);
-          }
-        });
-
-        requestAnimationFrame(drawSparkles);
-      }
-
-      drawSparkles();
-    </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
