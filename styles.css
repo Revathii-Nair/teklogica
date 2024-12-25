@@ -1,3 +1,7 @@
+:root {
+  color-scheme: light; /* Prevent system dark mode adjustments */
+}
+
 body {
   font-family: 'Garamond', serif;
   user-select: none;
