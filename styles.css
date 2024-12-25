@@ -39,13 +39,6 @@ body {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(48, 25, 52, 0.1); /*box-shadow: 0 4px 8px rgba(37, 35, 35, 0.1);*/
 }
-.container-1 {
-  background-color: rgba(25, 25, 112, 0.5);
-  border: 1px solid #461463;
-  border-radius: 8px;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(48, 25, 52, 0.1); /*box-shadow: 0 4px 8px rgba(37, 35, 35, 0.1);*/
-}
 
 .rounded-img {
   border-radius: 8px;
@@ -103,7 +96,16 @@ body {
 .para {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
     Verdana, sans-serif;
-  font-size: large;
+  font-size: 1.4rem;
+  color: rgba(230, 230, 250, 1);
+  text-shadow: 0 0 7px rgba(0, 191, 255, 0.8), 0 0 5px rgba(255, 20, 147, 0.7),
+    0 0 2px rgba(57, 255, 20, 0.6); /* Vibrant gradient glow */
+}
+
+.para1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+    Verdana, sans-serif;
+  font-size: 1rem;
   color: rgba(230, 230, 250, 1);
   text-shadow: 0 0 7px rgba(0, 191, 255, 0.8), 0 0 5px rgba(255, 20, 147, 0.7),
     0 0 2px rgba(57, 255, 20, 0.6); /* Vibrant gradient glow */
@@ -113,6 +115,8 @@ body {
 .dropdown {
   position: relative;
   display: inline-block;
+  border: 1px solid #461490;
+  border-radius: 8px;
 }
 
 .dropdown-content {
@@ -128,7 +132,7 @@ body {
 .dropdown-text {
   max-height: 0; /* Start with no height */
   overflow: hidden; /* Hide text when not visible */
-  transition: max-height 0.2s ease-out; /* Smooth transition for sliding down */
+  transition: max-height 0.1s ease-out; /* Smooth transition for sliding down */
 
   padding: 0 1rem;
 }
