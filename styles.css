@@ -130,7 +130,7 @@ body {
 
 .purple-p {
   color: rgba(230, 230, 250, 1);
-  text-shadow: 0 0 15px rgba(138, 43, 226, 0.9), 0 0 10px rgba(148, 0, 211, 0.8),
+  text-shadow: 0 0 12px rgba(138, 43, 226, 0.9), 0 0 10px rgba(148, 0, 211, 0.8),
     0 0 5px rgba(186, 85, 211, 0.7);
 }
 
