@@ -208,7 +208,7 @@ body {
 
 .custom-table-class th,
 .custom-table-class td {
-  padding: 0.75rem; /* Cell padding */
+  padding: 0.65rem; /* Cell padding */
   border: 1px solid rgba(230, 230, 250, 0.5); /* Border with custom color */
 }
 
