@@ -4,6 +4,7 @@ body {
   background: linear-gradient(45deg, rgba(25, 25, 112, 1), rgba(48, 25, 52, 1));
   color: #333;
 }
+
 #sparkleCanvas {
   position: fixed; /* Stays in the same position during scrolling */
   top: 0;
@@ -190,4 +191,27 @@ body {
 .dropdown:hover .dropdown-text {
   max-height: 62.5rem; /* Allow the text to expand */
   padding: 0.75rem 1rem; /* Add padding to the text container */
+}
+
+/* Custom table class mimicking Bootstrap attributes */
+.custom-table-class {
+  width: 100%; /* Full width */
+  max-width: 100%; /* No overflow */
+  background-color: transparent; /* Transparent background */
+  text-align: center; /* Center align */
+}
+
+.custom-table-class th {
+  background: rgba(25, 25, 112, 0.5); /* Header background */
+  color: white; /* Header text color */
+}
+
+.custom-table-class th,
+.custom-table-class td {
+  padding: 0.75rem; /* Cell padding */
+  border: 1px solid rgba(230, 230, 250, 0.5); /* Border with custom color */
+}
+
+.custom-table-class th {
+  font-weight: bold; /* Bold headers */
 }
