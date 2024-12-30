@@ -1,3 +1,7 @@
+:root {
+  color-scheme: light; /* Prevent system dark mode adjustments */
+}
+
 body {
   font-family: 'Garamond', serif;
   user-select: none;
@@ -6,13 +10,13 @@ body {
 }
 
 #sparkleCanvas {
-  position: fixed; /* Stays in the same position during scrolling */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Places it below everything */
-  pointer-events: none; /* Prevents it from capturing any mouse events */
+  z-index: -1;
+  pointer-events: none;
 }
 
 .li-a {
@@ -38,33 +42,28 @@ body {
   border: 1px solid #461463;
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(48, 25, 52, 0.1); /*box-shadow: 0 4px 8px rgba(37, 35, 35, 0.1);*/
+  box-shadow: 0 4px 8px rgba(48, 25, 52, 0.1);
+}
+
+.container-c {
+  background-color: transparent;
+  border: 0.2px solid #461463;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(48, 25, 52, 0.1);
+  width: max-content;
+  max-width: 100%;
 }
 
 .rounded-img {
   border-radius: 8px;
-}
-.btn-primary {
-  background: linear-gradient(45deg, rgba(25, 25, 112, 1), rgba(75, 0, 130, 0.8));
-  color: rgba(230, 230, 250, 1);
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  font-family: 'Garamond', serif;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: transform 0.3s, background 0.3s;
-}
-.btn-primary:hover {
-  background: rgba(48, 25, 52, 1);
-  background: linear-gradient(45deg, rgba(25, 25, 112, 1), rgba(75, 0, 130, 0.8));
 }
 
 .theme-name {
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
   font-weight: bold;
-  color: #a77a72; /* Classy color */
+  color: #a77a72;
   margin-top: 20px;
 }
 .title {
@@ -73,7 +72,7 @@ body {
   font-weight: bold;
   color: rgba(230, 230, 250, 1);
   text-shadow: 0 0 3px rgba(0, 191, 255, 0.5), 0 0 7px rgba(255, 20, 147, 0.5),
-    0 0 12px rgba(57, 255, 20, 0.5); /* Vibrant gradient glow */
+    0 0 12px rgba(57, 255, 20, 0.5);
 }
 
 .title-main {
@@ -82,7 +81,7 @@ body {
   font-weight: bold;
   color: rgba(230, 230, 250, 1);
   text-shadow: 0 0 3px rgba(0, 191, 255, 0.5), 0 0 7px rgba(255, 20, 147, 0.5),
-    0 0 12px rgba(57, 255, 20, 0.5); /* Vibrant gradient glow */
+    0 0 12px rgba(57, 255, 20, 0.5);
 }
 
 .title-secondary {
@@ -91,7 +90,7 @@ body {
   font-weight: bold;
   color: rgba(230, 230, 250, 1);
   text-shadow: 0 0 3px rgba(0, 191, 255, 0.5), 0 0 7px rgba(255, 20, 147, 0.5),
-    0 0 12px rgba(57, 255, 20, 0.5); /* Vibrant gradient glow */
+    0 0 12px rgba(57, 255, 20, 0.5);
 }
 
 .para {
@@ -105,7 +104,7 @@ body {
     Verdana, sans-serif;
   color: rgba(230, 230, 250, 1);
   text-shadow: 0 0 7px rgba(0, 191, 255, 0.8), 0 0 5px rgba(255, 20, 147, 0.7),
-    0 0 2px rgba(57, 255, 20, 0.6); /* Vibrant gradient glow */
+    0 0 2px rgba(57, 255, 20, 0.6);
   font-size: 1rem;
 }
 
@@ -118,24 +117,24 @@ body {
 .blue-p {
   color: rgba(230, 230, 250, 1);
   text-shadow: 0 0 7px rgba(0, 191, 255, 0.8), 0 0 5px rgba(255, 20, 147, 0.7),
-    0 0 2px rgba(57, 255, 20, 0.6); /* Vibrant gradient glow */
+    0 0 2px rgba(57, 255, 20, 0.6);
 }
 
 .blue-m {
   color: rgba(230, 230, 250, 1);
   text-shadow: 0 0 2px rgba(0, 191, 255, 0.8), 0 0 2px rgba(255, 20, 147, 0.7),
-    0 0 2px rgba(57, 255, 20, 0.6); /* Vibrant gradient glow */
+    0 0 2px rgba(57, 255, 20, 0.6);
 }
 .pink-p {
   color: rgba(230, 230, 250, 1);
-  text-shadow: 0 0 7px rgba(255, 105, 180, 0.8), /* Pink */ 0 0 5px rgba(128, 0, 128, 0.7),
-    /* Purple */ 0 0 2px rgba(255, 255, 0, 0.6); /* Yellow */
+  text-shadow: 0 0 7px rgba(255, 105, 180, 0.8), 0 0 5px rgba(128, 0, 128, 0.7),
+    0 0 2px rgba(255, 255, 0, 0.6);
 }
 
 .pink-m {
   color: rgba(230, 230, 250, 1);
-  text-shadow: 0 0 2px rgba(255, 105, 180, 0.8), /* Pink */ 0 0 2px rgba(128, 0, 128, 0.7),
-    /* Purple */ 0 0 2px rgba(255, 255, 0, 0.6); /* Yellow */
+  text-shadow: 0 0 2px rgba(255, 105, 180, 0.8), 0 0 2px rgba(128, 0, 128, 0.7),
+    0 0 2px rgba(255, 255, 0, 0.6);
 }
 
 .purple-p {
@@ -146,8 +145,8 @@ body {
 
 .orange-p {
   color: rgba(230, 230, 250, 1);
-  text-shadow: 0 0 2px rgba(255, 165, 0, 0.8), /* Orange */ 0 0 2px rgba(255, 0, 0, 0.7),
-    /* Red */ 0 0 2px rgba(255, 255, 0, 0.6); /* Yellow */
+  text-shadow: 0 0 2px rgba(255, 165, 0, 0.8), 0 0 2px rgba(255, 0, 0, 0.7),
+    0 0 2px rgba(255, 255, 0, 0.6);
 }
 
 .green-p {
@@ -156,7 +155,6 @@ body {
     0 0 5px rgba(94, 123, 94, 0.7);
 }
 
-/* Dropdown styles */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -175,14 +173,13 @@ body {
 
 /* Slide-down text container (initially hidden) */
 .dropdown-text {
-  max-height: 0; /* Start with no height */
+  max-height: 0;
   overflow: hidden; /* Hide text when not visible */
   transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out; /* Smooth transition for sliding down */
 
   padding: 0 1rem;
 }
 
-/* Show dropdown content when hovering */
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -193,25 +190,24 @@ body {
   padding: 0.75rem 1rem; /* Add padding to the text container */
 }
 
-/* Custom table class mimicking Bootstrap attributes */
 .custom-table-class {
-  width: 100%; /* Full width */
-  max-width: 100%; /* No overflow */
-  background-color: transparent; /* Transparent background */
-  text-align: center; /* Center align */
+  width: 100%;
+  max-width: 100%;
+  background-color: transparent;
+  text-align: center;
 }
 
 .custom-table-class th {
-  background: rgba(25, 25, 112, 0.5); /* Header background */
-  color: white; /* Header text color */
+  background: rgba(25, 25, 112, 0.5);
+  color: white;
 }
 
 .custom-table-class th,
 .custom-table-class td {
-  padding: 0.75rem; /* Cell padding */
-  border: 1px solid rgba(230, 230, 250, 0.5); /* Border with custom color */
+  padding: 0.75rem;
+  border: 1px solid rgba(230, 230, 250, 0.5);
 }
 
 .custom-table-class th {
-  font-weight: bold; /* Bold headers */
+  font-weight: bold;
 }
