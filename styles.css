@@ -217,16 +217,4 @@ body {
   height: 5rem;
 }
 
-@media (max-width: 768px) {
-  .logo-size {
-    width: 5rem;
-    height: 5rem;
-  }
-}
 
-@media (max-width: 576px) {
-  .logo-size {
-    width: 5rem;
-    height: 5rem;
-  }
-}
